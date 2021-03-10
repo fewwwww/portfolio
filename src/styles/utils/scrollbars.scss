@@ -1,0 +1,25 @@
+@use '~@/styles/tokens/dimensions';
+@use '~@/styles/tokens/durations';
+
+@mixin custom-scrollbars {
+  overflow-y: scroll;
+
+  $thumb-color: var(--content-secondary);
+  $track-color: var(--background-highlighted);
+
+  scrollbar-width: thin;
+  scrollbar-color: $thumb-color $track-color;
+
+  ::-webkit-scrollbar {
+    width: dimensions.$xs;
+    height: dimensions.$xs;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $thumb-color;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: $track-color;
+  }
+}

@@ -1,0 +1,23 @@
+@use '~@/styles/tokens/dimensions';
+
+@use '~@/styles/utils/theming';
+
+.header {
+  @include theming.transition(1);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  background-color: var(--background);
+
+  box-sizing: border-box;
+  width: 100%;
+
+  padding-left: calc(#{dimensions.$s} + env(safe-area-inset-left));
+  padding-right: calc(#{dimensions.$s} + env(safe-area-inset-right));
+
+  .home-anchor {
+    margin-right: auto;
+  }
+}

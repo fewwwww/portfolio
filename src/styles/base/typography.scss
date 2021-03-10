@@ -1,0 +1,52 @@
+@use '~@/styles/tokens/dimensions';
+@use '~@/styles/tokens/fonts';
+@use '~@/styles/tokens/sizes';
+@use '~@/styles/tokens/weights';
+
+@use '~@/styles/utils/theming';
+
+:root {
+  font-family: fonts.$body;
+  font-size: sizes.$m;
+  line-height: 1.5;
+
+  -webkit-text-size-adjust: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: fonts.$heading;
+  font-weight: weights.$bold;
+  line-height: 1.0;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+$heading-sizes: (
+  1: sizes.$xl6,
+  2: sizes.$xl5,
+  3: sizes.$xl4,
+  4: sizes.$xl3,
+  5: sizes.$xl2,
+  6: sizes.$xl1
+);
+
+@each $heading-level, $heading-size in $heading-sizes {
+  h#{$heading-level} {
+    font-size: $heading-size;
+  }
+}
+
+pre:not([class*="language-"]),
+code:not([class*="language-"]) {
+  @include theming.transition(1);
+
+  font-family: fonts.$code;
+  font-size: calc(14em / 16);
+
+  background-color: var(--background-highlighted);
+
+  padding: dimensions.$xs;
+
+  border-radius: 0.3em; // copied from Prism
+}

@@ -1,0 +1,23 @@
+@use '~@/styles/tokens/dimensions';
+@use '~@/styles/tokens/sizes';
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-top: dimensions.$s;
+  }
+
+  .icon,
+  .repr {
+    margin-right: dimensions.$m;
+
+    font-size: sizes.$l;
+  }
+
+  .icon {
+    display: block;
+  }
+}

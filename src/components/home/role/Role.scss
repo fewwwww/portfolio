@@ -1,0 +1,32 @@
+@use '~@/styles/tokens/durations';
+@use '~@/styles/tokens/fonts';
+@use '~@/styles/tokens/weights';
+
+@use '~@/styles/mixins/colored';
+
+@use '~@/styles/motion/transitions';
+
+@use '~@/styles/utils/theming';
+
+.role {
+  @include colored.colored('--role-color');
+
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--role-color);
+
+  .text {
+    .vowel {
+      @include theming.transition(2);
+
+      color: var(--content);
+    }
+
+    .actual-role {
+      font-family: fonts.$code;
+      font-weight: weights.$medium;
+    }
+  }
+}

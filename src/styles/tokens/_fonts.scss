@@ -1,0 +1,43 @@
+@use 'weights';
+
+// JetBrains Mono
+
+$jetbrains-mono: 'JetBrains Mono';
+$monospace:      $jetbrains-mono, monospace;
+
+$font-weights: (
+  Medium:    weights.$medium,
+  Bold:      weights.$bold,
+  ExtraBold: weights.$extrabold
+);
+
+@each $font-name, $font-weight  in $font-weights {
+  @font-face {
+    font-family: $jetbrains-mono;
+    font-weight: $font-weight;
+    font-style: normal;
+    font-display: swap;
+
+    src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/web/JetBrainsMono-#{$font-name}.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/web/JetBrainsMono-#{$font-name}.woff')  format('woff'),
+         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/otf/JetBrainsMono-#{$font-name}.otf')   format('opentype'),
+         url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/ttf/JetBrainsMono-#{$font-name}.ttf')   format('truetype');
+  }
+}
+
+// OS font stack
+
+$mac:            -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Apple Color Emoji';
+$windows:        'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$android:        'Roboto';
+$linux:          'Cantarell', 'Ubuntu', 'Oxygen';
+$system:         system-ui;
+
+$os:             $mac, $windows, $android, $linux, $system;
+$sans-serif:     $os, sans-serif;
+
+// Usage
+
+$heading:        $monospace;
+$body:           $sans-serif;
+$code:           $monospace;

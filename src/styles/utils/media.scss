@@ -1,0 +1,83 @@
+@use 'sass:list';
+
+@use '~@/styles/tokens/screens';
+@use '~@/styles/tokens/devices';
+
+@mixin device-only($min-width: null, $max-width: null) {
+  @if $min-width and $max-width {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+      @content
+    }
+  } @else if $min-width {
+    @media (min-width: $min-width) {
+      @content
+    }
+  } @else if $max-width {
+    @media (max-width: $max-width) {
+      @content
+    }
+  }
+}
+
+@mixin phone-only {
+  $phone: screens.$phone;
+  @include device-only($phone...) {
+    @content
+  }
+}
+
+@mixin tablet-portrait-only {
+  $tablet-portrait: screens.$tablet-portrait;
+  @include device-only($tablet-portrait...) {
+    @content
+  }
+}
+
+@mixin tablet-landscape-only {
+  $tablet-landscape: screens.$tablet-landscape;
+  @include device-only($tablet-landscape...) {
+    @content
+  }
+}
+
+@mixin desktop-standard-only {
+  $desktop-standard: screens.$desktop-standard;
+  @include device-only($desktop-standard...) {
+    @content
+  }
+}
+
+@mixin desktop-wide-only {
+  $desktop-wide: screens.$desktop-wide;
+  @include device-only($desktop-wide...) {
+    @content
+  }
+}
+
+@mixin device-specific($devices) {
+  @if list.index($devices, devices.$phone) {
+    @include phone-only {
+      @content
+    }
+  }
+  @if list.index($devices, devices.$tablet-portrait) or list.index($devices, devices.$tablet) {
+    @include tablet-portrait-only {
+      @content
+    }
+  }
+  @if list.index($devices, devices.$tablet-landscape) or list.index($devices, devices.$tablet) {
+    @include tablet-landscape-only {
+      @content
+    }
+  }
+  @if list.index($devices, devices.$desktop-standard) or list.index($devices, devices.$desktop) {
+    @include desktop-standard-only {
+      @content
+    }
+  }
+  @if list.index($devices, devices.$desktop-wide) or list.index($devices, devices.$desktop) {
+    @include desktop-wide-only {
+      @content
+    }
+  }
+}

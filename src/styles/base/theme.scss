@@ -1,0 +1,67 @@
+@use 'sass:color';
+
+@use '~@/styles/tokens/colors';
+
+@use '~@/styles/mixins/colored';
+
+@use '~@/styles/utils/theming';
+
+@mixin dark-theme {
+  #{--content-secondary}:      colors.$base-01;
+  #{--content}:                colors.$base-0;
+  #{--content-highlighted}:    colors.$base-1;
+  #{--content-prominent}:      colors.$base-2;
+
+  #{--background}:             colors.$base-03;
+  #{--background-highlighted}: colors.$base-02;
+  #{--background-selected}:    color.adjust(colors.$base-2, $alpha: -0.9);
+}
+
+@mixin light-theme {
+  #{--content-secondary}:      colors.$base-1;
+  #{--content}:                colors.$base-00;
+  #{--content-highlighted}:    colors.$base-01;
+  #{--content-prominent}:      colors.$base-02;
+
+  #{--background}:             colors.$base-3;
+  #{--background-highlighted}: colors.$base-2;
+  #{--background-selected}:    color.adjust(colors.$base-02, $alpha: -0.9);
+}
+
+@mixin theme {
+  @media (prefers-color-scheme: dark) {
+    @include dark-theme;
+  }
+  @media not all and (prefers-color-scheme: dark) {
+    @include light-theme;
+  }
+
+  &[theme="dark"] {
+    @include dark-theme;
+  }
+
+  &[theme="light"] {
+    @include light-theme;
+  }
+}
+
+:root {
+  @include theme;
+}
+
+body {
+  color: var(--content);
+  background-color: var(--background);
+}
+
+a {
+  color: inherit;
+}
+
+span, h1, h2, h3, h4, h5, h6, p, a, cite, svg {
+  @include colored.colored('--primary-color');
+
+  &[class*="-colored"] {
+    color: var(--primary-color);
+  }
+}

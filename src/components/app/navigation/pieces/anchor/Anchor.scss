@@ -1,0 +1,116 @@
+@use '~@/styles/tokens/colors';
+@use '~@/styles/tokens/dimensions';
+@use '~@/styles/tokens/sizes';
+@use '~@/styles/tokens/durations';
+@use '~@/styles/tokens/fonts';
+@use '~@/styles/tokens/weights';
+@use '~@/styles/tokens/devices';
+
+@use '~@/styles/layouts/bar_item';
+
+@use '~@/styles/mixins/colored';
+
+@use '~@/styles/utils/media';
+@use '~@/styles/utils/theming';
+
+.navigation .anchor,
+.header .anchor {
+  @include bar_item.bar-item;
+  @include theming.transition(2);
+
+  --inactive-color: var(--content-secondary);
+  --active-color: var(--content);
+  @include colored.colored('--active-color');
+
+  --anchor-color: var(--inactive-color);
+
+  position: relative;
+
+  color: var(--anchor-color);
+  text-decoration: none;
+
+  &:hover { // Mouse focus
+    --anchor-color: var(--active-color);
+  }
+
+  &:focus { // Keyboard focus
+    outline: 1px dashed var(--active-color);
+    outline-offset: -1px;
+  }
+
+  &.exact.router-link-exact-active,
+  &:not(.exact).router-link-active { // Currently open
+    --anchor-color: var(--active-color);
+
+    .icon {
+      fill-opacity: 1;
+    }
+  }
+}
+
+.navigation:not(.phone) .anchor,
+.header .anchor {
+  .text {
+    @include media.device-specific(devices.$tablet-portrait) {
+      display: none;
+    }
+
+    font-family: fonts.$code;
+    font-weight: weights.$medium;
+  }
+
+  .icon {
+    @include media.device-specific(devices.$group-big) {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    content: '';
+
+    background-color: var(--active-color);
+
+    width: 0;
+    height: dimensions.$xs;
+
+    transition-property: left, width;
+    transition-duration: durations.$m; // Same duration as screen change
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }
+
+  &.exact.router-link-exact-active,
+  &:not(.exact).router-link-active { // Currently open
+    &::after {
+      left: 0;
+
+      width: 100%;
+
+      transition-delay: durations.$m;
+    }
+
+    &.site-title {
+      &::after {
+        background-image: linear-gradient(90deg, colors.$accent-red, colors.$accent-magenta);
+      }
+    }
+  }
+}
+
+.navigation.phone .anchor {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  .text {
+    display: none;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}

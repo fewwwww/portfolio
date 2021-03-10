@@ -1,0 +1,111 @@
+@use 'sass:color';
+
+@use '~@/styles/tokens/sizes';
+@use '~@/styles/tokens/devices';
+@use '~@/styles/tokens/dimensions';
+@use '~@/styles/tokens/durations';
+
+@use '~@/styles/layouts/content';
+
+@use '~@/styles/motion/transitions';
+
+@use '~@/styles/utils/media';
+
+#home {
+  @include content.content-main;
+
+  @include transitions.flip('horizontal', durations.$m, 0, 0, 0, 90deg, 0, -90deg);
+  @include transitions.flip('horizontal-rev', durations.$m, 0, 0, 0, -90deg, 0, 90deg);
+  @include transitions.flip('vertical', durations.$m, -90deg, 0, 90deg, 0, 0, 0);
+  @include transitions.flip('vertical-rev', durations.$m, 90deg, 0, -90deg, 0, 0, 0);
+
+  section {
+    justify-content: center;
+  }
+
+  .home-grid {
+    box-sizing: border-box;
+
+    @include media.device-specific(devices.$group-small) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include media.device-specific(devices.$group-big) {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .left,
+    .right {
+      grid-column: span 1;
+
+      @include media.device-specific(devices.$group-big) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+
+    .left {
+      .content {
+        width: fit-content;
+
+        margin-left: auto;
+
+        @include media.device-specific(devices.$group-small) {
+          margin-right: auto; // Align center
+        }
+
+        @include media.device-specific(devices.$group-big) {
+          margin-right: 0; // Align right
+        }
+      }
+    }
+  }
+
+  .memoji-link,
+  .role-link {
+    outline: none;
+
+    text-decoration: none;
+  }
+
+  .roles {
+    font-size: sizes.$l;
+  }
+
+  .scroll {
+    @include media.device-specific(devices.$group-small) {
+      display: none;
+    }
+
+    @include media.device-specific(devices.$group-big) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.previous {
+        left: dimensions.$m;
+      }
+
+      &.next {
+        right: dimensions.$m;
+      }
+    }
+  }
+
+  footer {
+    position: relative;
+
+    .source {
+      position: absolute;
+      left: dimensions.$s;
+    }
+
+    .localizer {
+      position: absolute;
+      right: dimensions.$s;
+    }
+  }
+}

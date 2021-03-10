@@ -1,0 +1,31 @@
+@use '~@/styles/tokens/dimensions';
+
+@use '~@/styles/utils/theming';
+
+.medium {
+  @include theming.transition(2);
+
+  --medium-color: var(--content-prominent);
+
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+
+  text-decoration: none;
+
+  margin-bottom: dimensions.$s;
+
+  .repr {
+    margin-right: dimensions.$s;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--medium-color);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

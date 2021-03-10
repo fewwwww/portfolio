@@ -1,0 +1,97 @@
+{
+  "name": "~",
+  "type": "folder",
+  "children": [
+    {
+      "name": "experience",
+      "type": "folder",
+      "icon": "briefcase",
+      "children": [
+        {
+          "name": "IoT_Intern_At_Microsoft.md",
+          "aliases": [
+            "IoT_Intern_At_Microsoft"
+          ],
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "open_source",
+      "type": "folder",
+      "icon": "git",
+      "children": [
+        {
+          "name": "vocabulary.js",
+          "aliases": [
+            "vocabulary"
+          ],
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "projects",
+      "type": "folder",
+      "icon": "cube",
+      "children": [
+        {
+          "name": "rap.wav",
+          "aliases": [
+            "rap"
+          ],
+          "type": "file"
+        },
+                {
+          "name": "hiish.js",
+          "aliases": [
+            "hiish"
+          ],
+          "type": "file"
+        },
+                {
+          "name": "emocat.swift",
+          "aliases": [
+            "emocat"
+          ],
+          "type": "file"
+        },
+        {
+          "name": "dtmf.c",
+          "aliases": [
+            "dtmf"
+          ],
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "skills",
+      "type": "folder",
+      "icon": "flash",
+      "children": [
+        {
+          "name": "human_languages.md",
+          "aliases": [
+            "human_languages"
+          ],
+          "type": "file"
+        },
+        {
+          "name": "computer_languages.md",
+          "aliases": [
+            "computer_languages"
+          ],
+          "type": "file"
+        },
+        {
+          "name": "computer_software.md",
+          "aliases": [
+            "computer_software"
+          ],
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+@use '~@/styles/tokens/fonts';
+
+@use '~@/styles/utils/scrollbars';
+@use '~@/styles/utils/selections';
+@use '~@/styles/utils/theming';
+
+code[class*="language-"],
+pre[class*="language-"] {
+  @include theming.transition(2);
+
+  color: var(--content);
+
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    @include theming.transition(2);
+
+    color: var(--content-secondary);
+  }
+
+  .token.punctuation {
+    @include theming.transition(2);
+
+    color: var(--content-highlighted);
+  }
+
+  .token.entity {
+    @include theming.transition(3);
+
+    color: var(--content);
+    background-color: var(--background-selected);
+  }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  @include scrollbars.custom-scrollbars;
+  @include selections.custom-selections;
+
+  font-family: fonts.$code;
+  font-size: 14px;
+  line-height: 1.4;
+
+  background-color: unset;
+
+  overflow-y: hidden;
+
+  padding: 0;
+
+  margin: 0;
+}

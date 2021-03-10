@@ -1,0 +1,44 @@
+{
+  "compose_code": {
+    "main": "compose {one} and {two} code",
+    "adjectives": {
+      "one": "clean",
+      "two": "maintainable"
+    }
+  },
+  "author_docs": {
+    "main": "author {one} and {two} documentation",
+    "adjectives": {
+      "one": "helpful",
+      "two": "informative"
+    }
+  },
+  "ship_containers": {
+    "main": "ship {one} and {two} solutions",
+    "adjectives": {
+      "one": "scalable",
+      "two": "cloud-based"
+    }
+  },
+  "craft_experiences": {
+    "main": "crave {one} and {two} body",
+    "adjectives": {
+      "one": "aesthetic",
+      "two": "athletic"
+    }
+  },
+  "build_communities": {
+    "main": "build {one} and {two} communities",
+    "adjectives": {
+      "one": "vibrant",
+      "two": "thriving"
+    }
+  },
+  "evoke_emotions": {
+    "main": "produce {one} and {two} rap",
+    "adjectives": {
+      "one": "lovable",
+      "two": "peaceful"
+    }
+  }
+}

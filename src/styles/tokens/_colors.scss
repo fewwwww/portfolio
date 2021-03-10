@@ -1,0 +1,32 @@
+// Greyscale tones
+
+$base-03:        #002b36; // L* 15
+$base-02:        #073642; // L* 20
+$base-01:        #586e75; // L* 45
+$base-00:        #657b83; // L* 50
+$base-0:         #839496; // L* 60
+$base-1:         #93a1a1; // L* 65
+$base-2:         #eee8d5; // L* 92
+$base-3:         #fdf6e3; // L* 97
+
+// Accent colors
+
+$accent-yellow:  #b58900; // Split comp
+$accent-orange:  #cb4b16; // Complement
+$accent-red:     #dc322f; // Triad
+$accent-magenta: #d33682; // Tetrad
+$accent-violet:  #6c71c4; // Analogous
+$accent-blue:    #268bd2; // Monotone
+$accent-cyan:    #2aa198; // Analogous
+$accent-green:   #859900; // Tetrad
+
+$accents: (
+  'yellow':      $accent-yellow,
+  'orange':      $accent-orange,
+  'red':         $accent-red,
+  'magenta':     $accent-magenta,
+  'violet':      $accent-violet,
+  'blue':        $accent-blue,
+  'cyan':        $accent-cyan,
+  'green':       $accent-green
+);

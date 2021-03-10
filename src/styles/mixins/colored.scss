@@ -1,0 +1,18 @@
+@use 'sass:map';
+
+@use '~@/styles/tokens/colors';
+@use '~@/styles/utils/theming';
+
+@mixin colored($property) {
+  $colors: map.merge(colors.$accents, ('secondary': var(--content-secondary)));
+
+  @each $color-name, $color-var in $colors {
+    &.#{$color-name}-colored {
+      #{$property}: $color-var;
+    }
+  }
+
+  &.secondary-colored {
+    @include theming.transition(2);
+  }
+}

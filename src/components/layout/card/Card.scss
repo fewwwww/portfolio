@@ -1,0 +1,34 @@
+@use '~@/styles/tokens/dimensions';
+
+@use '~@/styles/mixins/colored';
+@use '~@/styles/mixins/intersectable';
+
+.card {
+  @include intersectable.intersectable;
+
+  position: relative;
+
+  background-color: var(--background-highlighted);
+
+  box-sizing: border-box;
+  height: 100%;
+  max-width: 100%;
+
+  padding: (dimensions.$l + 2 * dimensions.$m) dimensions.$m dimensions.$l;
+
+  .title {
+    position: absolute;
+
+    transform: translateY(-#{2 * dimensions.$m});
+  }
+
+  .content {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: 100%;
+  }
+}

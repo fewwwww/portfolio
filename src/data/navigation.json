@@ -1,0 +1,31 @@
+[
+  {
+    "to": {
+      "name": "home"
+    },
+    "text": "Home",
+    "isExact": true,
+    "icon": "face"
+  },
+  {
+    "to": {
+      "name": "portfolio"
+    },
+    "text": "Portfolio",
+    "icon": "folder"
+  },
+  {
+    "to": {
+      "name": "contact"
+    },
+    "text": "Contact",
+    "icon": "chat"
+  },
+  {
+    "to": {
+      "name": "about"
+    },
+    "text": "About",
+    "icon": "person"
+  }
+]

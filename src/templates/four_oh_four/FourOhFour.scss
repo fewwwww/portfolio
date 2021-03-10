@@ -1,0 +1,30 @@
+@use '~@/styles/layouts/content';
+
+@use '~@/styles/utils/theming';
+
+#four-oh-four {
+  @include content.content-main;
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    .error-place {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+      image-rendering: pixelated;
+    }
+  }
+
+  footer {
+    @include theming.transition(1);
+
+    background-color: var(--background);
+  }
+}

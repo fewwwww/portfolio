@@ -1,0 +1,44 @@
+[
+  {
+    "heading": "I prefer",
+    "list": [
+      {
+        "icon": "coffee",
+        "text": "<strong>flat white</strong> to other drinks"
+      },
+      {
+        "brand": "safari",
+        "text": "<strong>Safari</strong> to Google Chrome"
+      },
+      {
+        "brand": "fedora",
+        "text": "<strong>Fedora</strong> to any OS"
+      },
+      {
+        "brand": "apple",
+        "text": "<strong>iOS</strong> to Android"
+      }
+    ]
+  },
+  {
+    "heading": "I love",
+    "list": [
+      {
+        "icon": "tv",
+        "text": "lifting weights with <strong>television on</strong>"
+      },
+      {
+        "icon": "film",
+        "text": "watching <strong>movies</strong>"
+      },
+      {
+        "icon": "music",
+        "text": "producing <strong>rap music</strong>"
+      },
+      {
+        "icon": "walk",
+        "text": "taking <strong>long strolls</strong> in the dark"
+      }
+    ]
+  }
+]

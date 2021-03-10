@@ -1,0 +1,42 @@
+@use '~@/styles/tokens/dimensions';
+@use '~@/styles/tokens/durations';
+@use '~@/styles/tokens/fonts';
+
+@use '~@/styles/layouts/content';
+
+@use '~@/styles/motion/transitions';
+
+@use '~@/styles/utils/theming';
+
+@use './styles/typography';
+
+#blog--post {
+  @include transitions.fade(durations.$m);
+
+  section {
+    @include content.content-section;
+
+    .body {
+      box-sizing: border-box;
+
+      width: calc(100vw - 2 * #{dimensions.$m});
+      max-width: 45em;
+
+      margin: auto;
+
+      ::v-deep { // To style v-html content
+        .content {
+          @import './styles/post';
+        }
+      }
+
+      .footer {
+        @include theming.transition(2, (border-top-color));
+
+        border-top: 1px solid var(--content-secondary);
+
+        margin-top: dimensions.$l;
+      }
+    }
+  }
+}

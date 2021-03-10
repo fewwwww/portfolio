@@ -1,0 +1,24 @@
+@use '~@/styles/tokens/colors';
+
+:export {
+  colorBase03:           colors.$base-03;
+  colorBase02:           colors.$base-02;
+
+  colorBase2:            colors.$base-2;
+  colorBase3:            colors.$base-3;
+
+  colorBase01:           colors.$base-01;
+  colorBase00:           colors.$base-00;
+
+  colorBase0:            colors.$base-0;
+  colorBase1:            colors.$base-1;
+
+  colorAccentYellow:     colors.$accent-yellow;
+  colorAccentOrange:     colors.$accent-orange;
+  colorAccentRed:        colors.$accent-red;
+  colorAccentMagenta:    colors.$accent-magenta;
+  colorAccentViolet:     colors.$accent-violet;
+  colorAccentBlue:       colors.$accent-blue;
+  colorAccentCyan:       colors.$accent-cyan;
+  colorAccentGreen:      colors.$accent-green;
+}

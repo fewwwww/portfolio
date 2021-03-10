@@ -1,0 +1,10 @@
+@use '~@/styles/utils/scrollbars';
+@use '~@/styles/utils/selections';
+
+@use 'theme';
+@use 'typography';
+
+:root {
+  @include scrollbars.custom-scrollbars;
+  @include selections.custom-selections;
+}

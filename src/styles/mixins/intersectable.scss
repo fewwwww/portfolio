@@ -1,0 +1,17 @@
+@use '~@/styles/tokens/durations';
+
+@use '~@/styles/utils/theming';
+
+@mixin intersectable {
+  opacity: 0;
+
+  transform: scale(0.95) translateY(3em);
+
+  @include theming.transition(1, (opacity, transform), (durations.$m, durations.$m));
+
+  &.intersected {
+    opacity: 1;
+
+    transform: scale(1) translateY(0);
+  }
+}
