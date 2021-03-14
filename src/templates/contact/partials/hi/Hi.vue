@@ -85,20 +85,20 @@
         images: {
           portrait: {
             path: portrait,
-            caption: 'A friend\'s home in Bangalore'
+            caption: 'me at bodybuilding stage'
           },
           landscapes: [
             {
               path: landscapeOne,
-              caption: 'View of the hills at McLeod Ganj'
+              caption: 'me at my livehouse'
             },
             {
               path: landscapeTwo,
-              caption: 'Definitely not Japan'
+              caption: 'me at LA'
             },
             {
               path: landscapeThree,
-              caption: 'An abandoned kennel in Mumbai'
+              caption: 'me at first intern at Microsoft'
             }
           ]
         }
