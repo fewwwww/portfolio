@@ -12,7 +12,7 @@
           tranquil town of Huinan.
         </p>
         <p>
-          For High school, I studied at Jianping ECIC which is an AP shool.
+          For High school, I studied at Jianping ECIC which is an AP school.
           Then I went to New York University, Tandon School of Engineering.
           I have no clue where the next destination is, but I’m always ready to pack my bags.
         </p>

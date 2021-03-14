@@ -14,7 +14,9 @@ module.exports = {
           'python',
           'rest',
           'scss',
-          'yaml'
+          'yaml',
+          'swift',
+          'c'
         ],
         plugins: ['autolinker'],
         theme: 'solarizedlight',
