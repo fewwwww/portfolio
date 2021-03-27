@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "8dc0488aa1517c329989d43f6e284a05",
-    "url": "/content/Cloud_Support_Intern_At_Microsoft.md.content.8dc0488a.html"
+    "revision": "15265e5d4394ebe25651ec0dec2a31bf",
+    "url": "/content/Cloud_Engineer_Intern_At_Microsoft.md.content.15265e5d.html"
   },
   {
     "revision": "55ce4adf4c726125909326e7c094a698",
@@ -52,7 +52,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/about~blog-home~contact~home.43a2ec93.css"
   },
   {
-    "revision": "d880c5f488f2ce914412",
+    "revision": "2a248a8aac442658adad",
     "url": "/css/app.8487afdc.css"
   },
   {
@@ -84,7 +84,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/portfolio-home.ca997423.css"
   },
   {
-    "revision": "cb6c2fa905bfe86795d9",
+    "revision": "580f84f65a9abdd5e246",
     "url": "/css/portfolio.1c31b72a.css"
   },
   {
@@ -92,7 +92,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/portfolio~portfolio-home.64c409bd.css"
   },
   {
-    "revision": "f770ba8e6281c21d414a",
+    "revision": "b300d998596f569996e1",
     "url": "/css/portfolio~portfolio-home~portfolio-work.fb673a63.css"
   },
   {
@@ -312,7 +312,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/walk.6c96a0bb.svg"
   },
   {
-    "revision": "e42be22a3990e8a9b35d44c0a2a2b4c2",
+    "revision": "c74638f5a4eb4c2db18ed9fd06ce1722",
     "url": "/index.html"
   },
   {
@@ -324,8 +324,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/about~blog-home~contact~home.f9658dbc.js"
   },
   {
-    "revision": "d880c5f488f2ce914412",
-    "url": "/js/app.34598583.js"
+    "revision": "2a248a8aac442658adad",
+    "url": "/js/app.20cfde7b.js"
   },
   {
     "revision": "fa5b5dd37b8d775c7e11",
@@ -368,16 +368,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/portfolio-work.8fbb64c5.js"
   },
   {
-    "revision": "cb6c2fa905bfe86795d9",
-    "url": "/js/portfolio.70cd118f.js"
+    "revision": "580f84f65a9abdd5e246",
+    "url": "/js/portfolio.b5fc8990.js"
   },
   {
     "revision": "7793a01d43280b6cc12d",
     "url": "/js/portfolio~portfolio-home.a6eef0e7.js"
   },
   {
-    "revision": "f770ba8e6281c21d414a",
-    "url": "/js/portfolio~portfolio-home~portfolio-work.d2b82538.js"
+    "revision": "b300d998596f569996e1",
+    "url": "/js/portfolio~portfolio-home~portfolio-work.10b55b7f.js"
   },
   {
     "revision": "51a55fde5dde211dcc65b99968c98741",
