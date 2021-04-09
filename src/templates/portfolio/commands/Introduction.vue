@@ -35,7 +35,7 @@
         class="link yellow-colored"
         :href="resumeRepoUrl"
         target="_blank"
-        title="[S] See the LaTeX source code."
+        title="[S] Preview the resume."
         @shortkey="$navigateOutTo(resumeRepoUrl)">
         <Icon
           icon="code"
@@ -65,16 +65,16 @@
     },
     data () {
       return {
-        resumeRepoUrl: 'https://github.com/fewwwww/resume/',
+        resumeRepoUrl: 'https://fewwwww.github.io/resume/',
         resumeLinks: [
           {
             name: 'résumé',
-            url: 'https://fewwwww.github.io/resume/',
+            url: 'https://github.com/fewwwww/resume/raw/main/Resume--Suning%20Yao.pdf',
             shortkey: 'r' // 'r' for Résumé
           },
           {
             name: '我的简历',
-            url: 'https://fewwwww.github.io/resume-Chinese/',
+            url: 'https://github.com/fewwwww/resume-Chinese/raw/main/resume.pdf',
             shortkey: 'c' // 'c' for Cover letter
           }
         ],
