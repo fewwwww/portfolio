@@ -22,9 +22,9 @@
       "icon": "git",
       "children": [
         {
-          "name": "vocabulary.js",
+          "name": "violegacy.js",
           "aliases": [
-            "vocabulary"
+            "violegacy"
           ],
           "type": "file"
         }
