@@ -35,7 +35,7 @@ module.exports = {
       favicon32: 'favicon/favicon-32x32.png',
       favicon16: 'favicon/favicon-16x16.png',
       appleTouchIcon: 'favicon/apple-touch-icon-180x180.png',
-      maskIcon: 'favicon/favicon-16x16.png',
+      maskIcon: 'favicon/safari-pinned-tab.svg',
       msTileImage: 'favicon/mstile-144x144.png'
     },
     manifestOptions: {
@@ -44,7 +44,7 @@ module.exports = {
       description: 'Software engineer & other things',
       display: 'standalone',
       themeColor: '#073642',
-      background_color: '#073642',
+      background_color: '#c4cfd2',
       icons: [192, 512].map(size => [true, false].map(isMaskable => {
         let suffix = ''
         let purpose = 'any'
