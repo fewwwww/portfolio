@@ -8,9 +8,9 @@
       "icon": "briefcase",
       "children": [
         {
-          "name": "Cloud_Engineer_Intern_At_Microsoft.md",
+          "name": "Resident_Engineer_At_Microsoft.md",
           "aliases": [
-            "Cloud_Support_Intern_At_Microsoft"
+            "Resident_Engineer_At_Microsoft"
           ],
           "type": "file"
         }
