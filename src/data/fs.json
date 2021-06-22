@@ -13,6 +13,13 @@
             "Resident_Engineer_At_Microsoft"
           ],
           "type": "file"
+        },
+        {
+          "name": "Blockchain_Developer_At_UnionPay.md",
+          "aliases": [
+            "Blockchain_Developer_At_UnionPay"
+          ],
+          "type": "file"
         }
       ]
     },
