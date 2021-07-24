@@ -43,6 +43,13 @@
       "icon": "cube",
       "children": [
         {
+          "name": "hellcat.js",
+          "aliases": [
+            "hellcat"
+          ],
+          "type": "file"
+        },
+        {
           "name": "rap.wav",
           "aliases": [
             "rap"
