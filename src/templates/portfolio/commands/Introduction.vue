@@ -69,12 +69,12 @@
         resumeLinks: [
           {
             name: 'résumé',
-            url: 'https://github.com/fewwwww/resume/raw/main/Suning%20Yao-sy2940%40nyu.edu.pdf',
+            url: 'https://github.com/fewwwww/resume/raw/main/Suning%20Yao-yaosuning%40gmail.com.pdf',
             shortkey: 'r' // 'r' for Résumé
           },
           {
             name: '我的简历',
-            url: 'https://github.com/fewwwww/resume-Chinese/raw/main/姚溯宁-15801734883.pdf',
+            url: 'https://github.com/fewwwww/resume-Chinese/raw/main/姚溯宁-yaosuning%40gmail.com.pdf',
             shortkey: 'c' // 'c' for Cover letter
           }
         ],
