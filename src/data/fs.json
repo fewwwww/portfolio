@@ -34,6 +34,13 @@
             "violegacy"
           ],
           "type": "file"
+        },
+        {
+          "name": "welightos.js",
+          "aliases": [
+            "welightos"
+          ],
+          "type": "file"
         }
       ]
     },
