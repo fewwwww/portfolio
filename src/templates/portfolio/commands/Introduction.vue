@@ -65,7 +65,7 @@
     },
     data () {
       return {
-        resumeRepoUrl: 'https://fewwwww.github.io/resume/',
+        resumeRepoUrl: 'https://github.com/fewwwww/portfolio',
         resumeLinks: [
           {
             name: 'résumé',
