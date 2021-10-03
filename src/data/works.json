@@ -14,10 +14,10 @@
     }
   },
   "ship_containers": {
-    "main": "ship {one} and {two} solutions",
+    "main": "dive deep into {one} {two} projects",
     "adjectives": {
-      "one": "scalable",
-      "two": "cloud-based"
+      "one": "innovative",
+      "two": "blockchain"
     }
   },
   "craft_experiences": {
