@@ -90,7 +90,7 @@
           landscapes: [
             {
               path: landscapeOne,
-              caption: 'me at my livehouse'
+              caption: 'me at Unionpay'
             },
             {
               path: landscapeTwo,
@@ -98,7 +98,7 @@
             },
             {
               path: landscapeThree,
-              caption: 'me at first intern at Microsoft'
+              caption: 'me at Microsoft'
             }
           ]
         }
