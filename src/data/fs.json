@@ -48,6 +48,13 @@
             "welightos"
           ],
           "type": "file"
+        },
+        {
+          "name": "taishanggenerator.js",
+          "aliases": [
+            "taishanggenerator"
+          ],
+          "type": "file"
         }
       ]
     },
