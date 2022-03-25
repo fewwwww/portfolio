@@ -43,16 +43,9 @@
           "type": "file"
         },
         {
-          "name": "welightos.js",
+          "name": "welight.js",
           "aliases": [
-            "welightos"
-          ],
-          "type": "file"
-        },
-        {
-          "name": "taishanggenerator.js",
-          "aliases": [
-            "taishanggenerator"
+            "welight"
           ],
           "type": "file"
         }
