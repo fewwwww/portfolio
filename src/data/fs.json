@@ -57,6 +57,13 @@
       "icon": "cube",
       "children": [
         {
+          "name": "gonsa.js",
+          "aliases": [
+            "gonsa"
+          ],
+          "type": "file"
+        },
+        {
           "name": "hellcat.js",
           "aliases": [
             "hellcat"
