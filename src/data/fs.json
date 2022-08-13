@@ -27,6 +27,13 @@
             "Crypto_Researcher_At_Foresight_Ventures"
           ],
           "type": "file"
+        },
+        {
+          "name": "Software_Engineer_At_Google.md",
+          "aliases": [
+            "Software_Engineer_At_Google"
+          ],
+          "type": "file"
         }
       ]
     },
