@@ -38,8 +38,8 @@
       Themer
     },
     metaInfo: {
-      title: 'Web dev & more', // fallback if page does not populate
-      titleTemplate: '%s | Suning Yao'
+      title: 'msfew', // fallback if page does not populate
+      titleTemplate: '%s / Suning Yao'
     },
     data () {
       return {

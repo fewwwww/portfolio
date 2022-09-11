@@ -144,7 +144,7 @@
       Work
     },
     metaInfo: {
-      title: 'web dev & more...',
+      title: 'msfew',
       meta: ['description', 'og:description'].map(name => ({
         name,
         content: descriptions.home
