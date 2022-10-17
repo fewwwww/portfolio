@@ -34,6 +34,13 @@
             "Software_Engineer_At_Google"
           ],
           "type": "file"
+        },
+        {
+          "name": "Community_Lead_At_Hyper_Oracle.md",
+          "aliases": [
+            "Community_Lead_At_Hyper_Oracle"
+          ],
+          "type": "file"
         }
       ]
     },
