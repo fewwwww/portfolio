@@ -8,23 +8,9 @@
       "icon": "briefcase",
       "children": [
         {
-          "name": "Resident_Engineer_At_Microsoft.md",
+          "name": "Co_Founder_At_Hyper_Oracle.md",
           "aliases": [
-            "Resident_Engineer_At_Microsoft"
-          ],
-          "type": "file"
-        },
-        {
-          "name": "Blockchain_Developer_At_UnionPay.md",
-          "aliases": [
-            "Blockchain_Developer_At_UnionPay"
-          ],
-          "type": "file"
-        },
-        {
-          "name": "Crypto_Researcher_At_Foresight_Ventures.md",
-          "aliases": [
-            "Crypto_Researcher_At_Foresight_Ventures"
+            "Co_Founder_At_Hyper_Oracle"
           ],
           "type": "file"
         },
@@ -36,9 +22,23 @@
           "type": "file"
         },
         {
-          "name": "Head_Of_Strategy_At_Hyper_Oracle.md",
+          "name": "Crypto_Researcher_At_Foresight_Ventures.md",
           "aliases": [
-            "Head_Of_Strategy_At_Hyper_Oracle"
+            "Crypto_Researcher_At_Foresight_Ventures"
+          ],
+          "type": "file"
+        },
+        {
+          "name": "Blockchain_Developer_At_UnionPay.md",
+          "aliases": [
+            "Blockchain_Developer_At_UnionPay"
+          ],
+          "type": "file"
+        },
+        {
+          "name": "Resident_Engineer_At_Microsoft.md",
+          "aliases": [
+            "Resident_Engineer_At_Microsoft"
           ],
           "type": "file"
         }
